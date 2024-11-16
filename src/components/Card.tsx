@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image"; // Corrected import for next/image
-// import '../app/styles/Card.css';
+import '../app/styles/Card.css';
 
 interface PropsType {
     title: string;
@@ -8,6 +8,7 @@ interface PropsType {
     img: string;
     tags: string[];
 }
+
 
 const Card: React.FC<PropsType> = ({ title, desc, img, tags }) => {
     // Use a conditional class based on window width
